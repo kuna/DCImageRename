@@ -1,0 +1,9 @@
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\bin\Debug\dcImageConv.exe
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\bin\Debug\dcImageConv.pdb
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\dcImageConv.Form1.resources
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\dcImageConv.Properties.Resources.resources
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\dcImageConv.exe
+c:\users\kuna\documents\visual studio 2010\Projects\dcImageConv\dcImageConv\obj\x86\Debug\dcImageConv.pdb
