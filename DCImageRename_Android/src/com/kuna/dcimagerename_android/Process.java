@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 public class Process extends Activity {
 
+	int val = 0;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,15 +31,10 @@ public class Process extends Activity {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				int val = 0;
+				val = 0;
 				
-				// get directoryname
-				File dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-				File[] fs = dir.listFiles();
-				for (File f:fs) {
-					if (!f.getName().endsWith(".php")) continue;
-					val += ProcessFile(f);
-				}
+				ProcessFolder(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS));
+				ProcessFolder( new File("/mnt/extSdCard/Download"));
 				
 				final int resval = val;
 				// process end
@@ -51,6 +48,16 @@ public class Process extends Activity {
 				finish();
 			}
 		}).start();
+	}
+	
+	public void ProcessFolder(File folder) {
+		File[] fs = folder.listFiles();
+		if (fs != null) {
+			for (File f:fs) {
+				if (!f.getName().endsWith(".php")) continue;
+				val += ProcessFile(f);
+			}
+		}
 	}
 	
 	public int ProcessFile(File f) {
